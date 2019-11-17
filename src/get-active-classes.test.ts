@@ -1,4 +1,4 @@
-import { getActiveClasses } from "./active-classes";
+import { getActiveClasses } from "./get-active-classes";
 
 describe("TESTING getActiveClasses", () => {
   describe("GIVEN an empty object", () => {

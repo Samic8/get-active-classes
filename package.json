@@ -4,15 +4,24 @@
   "main": "get-active-classes.js",
   "license": "MIT",
   "scripts": {
+    "test": "jest",
     "ts-definitions": "tsc -d --declarationDir . --emitDeclarationOnly src/get-active-classes.ts",
     "build": "gulp && yarn ts-definitions",
     "deploy": "yarn build && yarn publish"
   },
   "dependencies": {
     "gulp": "^4.0.2",
+    "jest": "^24.9.0",
     "rollup": "^1.27.0",
     "rollup-plugin-typescript": "^1.0.1",
     "tslib": "^1.10.0",
     "typescript": "^3.7.2"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.7.2",
+    "@babel/preset-env": "^7.7.1",
+    "@babel/preset-typescript": "^7.7.2",
+    "@types/jest": "^24.0.23",
+    "babel-jest": "^24.9.0"
   }
 }
