@@ -1,0 +1,18 @@
+{
+  "name": "get-active-classes",
+  "version": "0.0.3",
+  "main": "get-active-classes.js",
+  "license": "MIT",
+  "scripts": {
+    "ts-definitions": "tsc -d --declarationDir . --emitDeclarationOnly src/get-active-classes.ts",
+    "build": "gulp && yarn ts-definitions",
+    "deploy": "yarn build && yarn publish"
+  },
+  "dependencies": {
+    "gulp": "^4.0.2",
+    "rollup": "^1.27.0",
+    "rollup-plugin-typescript": "^1.0.1",
+    "tslib": "^1.10.0",
+    "typescript": "^3.7.2"
+  }
+}
