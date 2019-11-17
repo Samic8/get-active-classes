@@ -1,4 +1,4 @@
-## getActiveClasses ![Build Status](https://github.com/samic*/get-active-classes/workflows/test/badge.svg)
+## getActiveClasses ![Build Status](https://github.com/samic8/get-active-classes/workflows/test/badge.svg)
 
 > Javascript conditional class utility
 
