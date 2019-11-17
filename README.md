@@ -1,4 +1,6 @@
-## getActiveClasses
+## getActiveClasses ![Build Status](https://github.com/samic*/get-active-classes/workflows/test/badge.svg)
+
+> Javascript conditional class utility
 
 ### Installation
 
