@@ -1,7 +1,8 @@
 {
   "name": "get-active-classes",
   "version": "0.0.9",
-  "main": "get-active-classes.js",
+  "main": "get-active-classes.cjs.js",
+  "module": "get-active-classes.es.js",
   "types": "get-active-classes.d.ts",
   "license": "MIT",
   "scripts": {

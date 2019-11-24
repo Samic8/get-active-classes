@@ -8,12 +8,14 @@ gulp.task("default", () => {
       input: "./src/get-active-classes.ts",
       plugins: [rollupTypescript()]
     })
-    .then(bundle => {
-      return bundle.write({
-        file: "./get-active-classes.js",
-        format: "umd",
-        name: "get-active-classes",
-        sourcemap: true
-      });
-    });
+    .then(bundle => [writeFile(bundle, "es"), writeFile(bundle, "cjs")]);
 });
+
+function writeFile(bundle, format) {
+  return bundle.write({
+    file: `./get-active-classes.${format}.js`,
+    format,
+    name: "get-active-classes",
+    sourcemap: true
+  });
+}
