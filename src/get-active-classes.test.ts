@@ -1,4 +1,4 @@
-import { getActiveClasses } from "./get-active-classes";
+const { getActiveClasses } = require("./get-active-classes");
 
 describe("TESTING getActiveClasses", () => {
   describe("GIVEN an empty object", () => {
