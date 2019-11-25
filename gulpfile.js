@@ -8,7 +8,10 @@ gulp.task("default", () => {
       input: "./src/get-active-classes.ts",
       plugins: [rollupTypescript()]
     })
-    .then(bundle => [writeFile(bundle, "es"), writeFile(bundle, "cjs")]);
+    .then(bundle => {
+      writeFile(bundle, "es");
+      writeFile(bundle, "cjs");
+    });
 });
 
 function writeFile(bundle, format) {
