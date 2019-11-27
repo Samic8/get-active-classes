@@ -7,7 +7,6 @@
   "license": "MIT",
   "scripts": {
     "test": "jest",
-    "ts-definitions": "tsc -d --declarationDir . --emitDeclarationOnly src/get-active-classes.ts",
     "build": "gulp",
     "deploy": "yarn build && yarn publish"
   },
