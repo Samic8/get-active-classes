@@ -1,12 +1,14 @@
 const gulp = require("gulp");
 const rollup = require("rollup");
-const rollupTypescript = require("rollup-plugin-typescript");
+const rollupTypescript = require("rollup-plugin-typescript2");
 
 gulp.task("default", () => {
   return rollup
     .rollup({
       input: "./src/get-active-classes.ts",
-      plugins: [rollupTypescript()]
+      plugins: [
+        rollupTypescript({ declarationDir: process.cwd(), declaration: true })
+      ]
     })
     .then(bundle => {
       writeFile(bundle, "es");
